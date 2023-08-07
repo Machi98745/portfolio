@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>portfolio</title>
+    <style>
+        body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    min-height: 100px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+  }
+  
+  .title{
+      text-align: left;
+  }
+  
+  nav {
+    background-color: #333; /* Background color of the navigation bar */
+    padding: 25px;
+    display: flex;
+    justify-content: space-between; /* To push the title and button to the opposite sides */
+    align-items: center;
+    color: #fff; /* Text color for the title and button */
+  }
+  
+  .navbar-left h1 {
+    margin: 0;
+  }
+  
+  .navbar-right a {
+      text-decoration: none;
+    background-color: #0988ff; /* Background color of the button */
+    color: #fff; /* Text color for the button */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s ease;
+  }
+  
+  .navbar-right a:hover{
+    background-color: #2fffac; /* Background color of the button */
+    color: #fff; /* Text color for the button */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+  }
+  
+  .card {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: 0.5s ease;
+    align-self: center;
+  }
+  
+  .card:hover {
+      transform: scale(1.2);
+      transition: .5s;
+      cursor: pointer;
+  }
+  
+  .card_header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  #dev {
+      text-decoration: none;
+      color: #fff;
+  }
+  
+  #song {
+      text-decoration: none;
+      color: #0988ff;
+  }
+  
+  h2 {
+    margin: 0;
+  }
+  
+  img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  footer {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  header {
+    text-decoration: none;
+  }
+
+    </style>
+</head>
+<body>
+  <header>
+    <h1>My web portfolio</h1>
+  </header>
+
+  <nav>
+    <div class="navbar-left">
+      <h1 id="rick"></h1>
+    </div>
+    <div class="navbar-right">
+      <a href="#home">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#skills">SKILLS</a>
+      <a href="#education">EDUCATION</a>
+      <a href="#contacts">CONTACTS</a>
+    </div>
+  </nav>
+
+  <section id="home">
+    <a href="#"><h1>PORTFOLIO</h1></a>
+  </section>
+
+  <section id="about">
+    <div class="about">
+      <img src="IMG20230604115950_polarr.jpg" alt="นี้คือผม" style="width:301px;height: 350px;px;">
+      <!-- รูปตัวเองมาใส่ -->
+      <p>
+        Hello I am Khiaongo Yanangi. <br>ผมได้เรียนรู้เรื่องนี้มาจากช่อง...<a href="https://www.youtube.com/@PatiphanPhengpao" target=" " id="song"><h4>ช่องที่ผมไปเรียนรู้มา</h4></a>
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h1>ประวัติด้านการศึกษา</h1>
+    <p>ประวัติของตัวเองมาใส่....</p>
+  </section>
+
+  <section id="education">
+    <h1>ผลงานที่ได้รับ</h1>
+    <p>ผลงานด้านต่างๆ</p>
+  </section>
+
+  <section id="contacts">
+    <h1>กิจกรรมที่เข้าร่วม</h1>
+    <p>รูปกิจกรรมพร้อมคำอธิบาย</p>
+  </section>
+
+  <script src="app.js"></script>
+
+  <footer>
+    <p>&copy; 2023 Khiaongo Yanangi.</p>
+  </footer>
+
+</body>
+</html>
